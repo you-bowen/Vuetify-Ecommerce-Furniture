@@ -8,7 +8,7 @@
             <v-item-group mandatory class="mt-n1">
               <v-container>
                 <v-row justify="center" class="space">
-                  <v-col cols="12" xs="12" sm="4" md="2" v-for="(category, i) in data.categories" :key="i">
+                  <v-col cols="12" sm="4" md="2" v-for="(category, i) in data.categories" :key="i">
                     <v-item v-slot="{ isSelected, toggle }">
                       <v-card :color="isSelected ? '#D5F0DB' : 'white'" :class="isSelected ? 'borderme' : 'borderout'"
                         class="d-flex align-center rounded-lg mx-2" height="100" @click="toggle" flat>
@@ -49,7 +49,7 @@
       <v-divider></v-divider>
       <br/>
       <v-row>
-        <v-col cols="12" sm="3" v-for="(chair, i) in data.chairs" :key="i">
+        <v-col cols="12" sm="4" md="3" v-for="(chair, i) in data.chairs" :key="i">
           <v-card height="300" align="center" flat outlined tile>
             <v-img :src="chair.image" width="200" height="200" contain></v-img>
             <v-card-text class="mt-n1">
